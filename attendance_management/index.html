@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+    <title>勤怠管理システム</title>
+</head>
+
+<body>
+    <header>
+        <div class="header flex id_between">
+            <h1>勤怠管理システム</h1>
+            <div class="flex">
+                <h2>山崎太郎<span>ログアウト</span></h2>
+                <a><img src="img/setting.svg" alt="設定"></a>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div id="dateclock" class="flex">
+            <div id="date"></div>
+            <div id="clock"></div>
+        </div>
+        <div class="attendance_and_leaving_button">
+            <a id="attendance">出勤</a>
+            <a id="leaving">退勤</a>
+        </div>
+        <div class="attendance_and_leaving_time">
+            <span id="attendance_time"></span>
+            <span id="leaving_time"></span>
+        </div>
+        <p id="log"></p>
+        <dl id="punch_history">
+            <dt>打刻履歴</dt>
+            <dd>
+                <dl class="flex">
+                    <dt>10月7日(月曜日)</dt>
+                    <dd>08:30</dd>
+                    <dd>出勤</dd>
+                </dl>
+            </dd>
+            <dd>
+                <dl class="flex">
+                    <dt>10月7日(月曜日)</dt>
+                    <dd>17:30</dd>
+                    <dd>退勤</dd>
+                </dl>
+            </dd>
+        </dl>
+    </main>
+</body>
+
+</html>
